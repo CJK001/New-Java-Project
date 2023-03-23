@@ -4,7 +4,7 @@ node {
         git branch: 'main', credentialsId: 'github-cred', 
         url: 'https://github.com/CJK001/New-Java-Project.git'
     }
-    stage('Compile') {
+    stage('Compilee') {
         sh "${mvnHome}/bin/mvn compile"
     }
     stage('SonarQube-Analysis') {
